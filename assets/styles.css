@@ -528,3 +528,31 @@ h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.01em; }
 /* keep hero title and subtitle on one line where the text is short enough */
 .hero h1 { max-width: none; }
 .hero .lede { max-width: none; }
+
+/* ============ FEEDBACK FIXES: menu wrapping + oversized fonts ============ */
+body { font-size: 17px; }
+.hero h1 { font-size: clamp(1.8rem, 3.8vw, 2.7rem); }
+.hero .lede { font-size: 1.1rem; }
+.section-head h2 { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
+.topstrip { font-size: .66rem; }
+
+/* desktop nav: never let an item break onto a second line */
+.nav { gap: 2px; }
+.nav a { white-space: nowrap; font-size: .78rem; letter-spacing: .04em; padding: 8px 10px; }
+
+/* collapse to a clean menu button below 1024px so the bar can't wrap */
+@media (max-width: 1024px) {
+  .nav-toggle { display: inline-flex; }
+  #primary-nav {
+    position: fixed; inset: auto 0 auto 0; top: 98px; flex-direction: column; align-items: stretch;
+    background: var(--ink); border-bottom: 3px solid var(--oxblood); padding: 10px 16px 18px; gap: 2px;
+    box-shadow: var(--shadow); transform: translateY(-170%); transition: transform .22s ease; height: auto;
+  }
+  #primary-nav.open { transform: translateY(0); }
+  #primary-nav a { padding: 12px 10px; color: #c2ccd7; white-space: nowrap; }
+  #primary-nav a[aria-current="page"] { box-shadow: inset 3px 0 0 var(--oxblood); }
+  .topstrip .ts-ref { display: none; }
+}
+@media (max-width: 760px) {
+  .topstrip .ts-right { display: none; }
+}
