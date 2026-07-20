@@ -559,3 +559,9 @@ body { font-size: 17px; }
 
 /* wider content column so large screens aren't mostly margin */
 :root { --wrap: 1400px; }
+
+/* mobile: stop the dossier status pill from overflowing sideways */
+@media (max-width: 720px) {
+  .dossier-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .dossier-head .dh-status { white-space: normal; }
+}
