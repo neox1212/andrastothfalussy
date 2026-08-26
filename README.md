@@ -116,8 +116,8 @@ properly.
   register-style look while the notice and footer state clearly that the site is
   independent, not a government or law-enforcement body, and makes no allegation
   of criminal liability.
-- The **summary judgment** is updated: the Updates page leads with the signed
-  order of 15 July 2026 (Filing # 252525224), and the Start page reflects that
-  the written order is now entered.
+- The **final judgment** is updated: the Updates page leads with the judgment
+  entered on 4 August 2026 (Filing # 254108454), and the Start and Playbook
+  pages reflect the $1,248,420.28 judgment against Secondlife.
 - Content is otherwise the same text as the live site, reorganised into a
   cleaner layout with a dedicated "pattern" section on the Start page.
