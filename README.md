@@ -119,5 +119,11 @@ properly.
 - The **final judgment** is updated: the Updates page leads with the judgment
   entered on 4 August 2026 (Filing # 254108454), and the Start and Playbook
   pages reflect the $1,248,420.28 judgment against Secondlife.
+- The **corporate-control review** is housed on Known Associates, with supporting
+  registry references on Sources and Links.
+- The **verification watchlist** on Known Associates gives counterparties a fast
+  index of the people, companies, and trading names appearing in the record.
+- The **homepage** retains the original advisory introduction, four documented
+  figures, warning image, subject dossier, and three categories of documented harm.
 - Content is otherwise the same text as the live site, reorganised into a
   cleaner layout with a dedicated "pattern" section on the Start page.
