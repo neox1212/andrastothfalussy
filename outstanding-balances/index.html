@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outstanding balances — András Tóthfalussy</title>
+<meta name="description" content="Live calculated balances for the Hong Kong award, UK lenders’ Florida judgment and Hermelindis Stiftung, with sources and calculation assumptions.">
+<meta name="robots" content="index,follow">
+
+
+
+
+<link rel="canonical" href="https://andrastothfalussy.com/outstanding-balances/">
+<link rel="stylesheet" href="../assets/styles.css?v=9">
+<link rel="stylesheet" href="../assets/counters.css?v=4">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span class="ts-left"><span class="dot">●</span> Public-record advisory <span class="ts-ref">Ref · AT-2025-001</span></span>
+    <span class="ts-right">Sourced from court filings &amp; public records &nbsp;·&nbsp; <span class="ts-status">Status: Active</span></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="kicker">Public-record advisory</span>
+      <span class="name">András Tóthfalussy</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="../index.html">Start</a>
+      <a href="../playbook/index.html">Playbook</a>
+      <a href="../updates/index.html">Updates</a>
+      <a href="../outstanding-balances/index.html" aria-current="page">Outstanding balances</a>
+      <a href="../known-associates/index.html">Known Associates</a>
+      <a href="../sources/index.html">Sources</a>
+      <a href="../about-the-author/index.html">About the author</a>
+      <a href="../links/index.html">Links</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="balances-page"><div class="wrap"><section class="debt-section" aria-labelledby="debt-title">
+ <div class="debt-heading"><h1 id="debt-title">Outstanding balances</h1><div class="counter-live-controls"><span id="counter-live-status">Live · USD</span><button id="counter-toggle" type="button" aria-pressed="false">Pause</button><time id="counter-time"></time></div></div>
+ <p class="balances-intro">Calculated outstanding amounts, including accrued interest. The figures update live in US dollars and cents.</p>
+ <div class="debt-grid">
+  <article class="debt-card"><div class="debt-label">Hong Kong<br>HKIAC award</div><div><div class="debt-unit">USD</div><div class="debt-amount" id="hk-balance">—</div></div><p class="debt-description">Velotrade award against András Tóthfalussy. Principal, calculated interest and USD costs.</p><div class="debt-status">12% p.a. · Approx. $99.18 per day</div></article>
+  <article class="debt-card"><div class="debt-label">UK lenders<br>Florida judgment</div><div><div class="debt-unit">USD · CALCULATED BALANCE</div><div class="debt-amount" id="uk-balance">—</div></div><p class="debt-description">Against Secondlife Electronics Trading LLC. Entered 4 August 2026.</p><div class="debt-status">8.06% p.a. · Approx. $275.91 per day</div></article>
+  <article class="debt-card"><div class="debt-label">Hermelindis<br>Stiftung</div><div><div class="debt-unit">USD · APPROXIMATE</div><div class="debt-amount" id="hermelindis-balance">—</div></div><p class="debt-description">~$800,000 principal + <span id="hermelindis-interest">$432,000</span> unpaid and accruing interest.</p><div class="debt-status">+$16,000 per month · Continuous accrual<br>Approximately one cent every 1.6 seconds<br><span id="hermelindis-months">27</span> monthly payments already due</div></article>
+  <article class="debt-card"><div class="debt-label">Combined<br>Three claims</div><div><div class="debt-unit">USD · PROVISIONAL SUBTOTAL</div><div class="debt-amount" id="combined-balance">—</div></div><p class="debt-description">Sum of the three figures shown. Includes continuously accruing interest. Non-USD costs remain excluded.</p><div class="debt-status">Provisional subtotal, not a final balance</div></article>
+ </div>
+ <p class="debt-note">Calculation assumes no further payments or recoveries. These are separate claims involving Tóthfalussy and associated entities; the Florida judgment is against Secondlife Electronics Trading LLC.</p>
+ <details class="debt-method" open><summary>Calculation basis and counter behaviour</summary>
+ <p><strong>Hong Kong:</strong> HKIAC/23011, award dated 27 October 2023, paragraph 104: $301,673.91 plus 12% annual default interest on six amounts from their respective dates, plus $23,850 in USD costs. This counter calculates simple interest using elapsed days divided by 365; that day-count convention is a calculation assumption, not expressly specified in the operative award. Additional awarded costs of EUR 800, HUF 248,681 and HKD 110,707 remain separate and are excluded from the dollar counters. No interest is applied to costs. Tranches: $39,332.34 from 31 January 2022; $51,577.55 from 6 February; $85,562.40 from 20 February; $34,156.35 from 26 February; $44,047.34 from 13 March; $46,997.93 from 26 March 2022.</p>
+ <p><strong>UK lenders:</strong> Verified against the signed Final Judgment, filing #254108454, entered 4 August 2026. The stated $1,248,420.28 includes prejudgment interest through 31 July. This calculation counts 1–4 August inclusive at $264.99 per day: $1,059.96, giving an adjusted judgment of $1,249,480.24. That entry-day treatment is shown explicitly for review. It then applies 8.06% simple annual interest to the adjusted judgment, using elapsed time from 4 August, including fractions of a day, divided by 365 days. Post-judgment interest is not compounded. The rate resets annually on 1 January; the calculation stops at 31 December 2026 until the next applicable rate is available. <a href="https://myfloridacfo.com/division/aa/audits-reports/judgment-interest-rates">Official rate table</a>.</p>
+ <p><strong>Hermelindis Stiftung:</strong> This calculation uses the approximately $800,000 principal on the existing site and $16,000 monthly interest. The first unpaid due date is 10 July 2024, followed by the 10th of each month. The live display adds unpaid monthly amounts plus a proportional share of the current period between two due dates. For example, at 00:00 UTC on 1 October 2026, $432,000 is overdue and $11,200 is accruing toward the next payment, for $443,200 displayed interest. This continuous accrual is a display estimate, not a claim that the next payment is already overdue. The principal remains approximate, as recorded on the existing site. No compounding or interest on unpaid interest is assumed.</p>
+ <p><strong>Live calculation:</strong> Dollar amounts include cents and update live from the clock. HK and UK annual interest is spread continuously across elapsed seconds for display, under the stated simple-interest convention. UTC is used consistently. Hermelindis spreads $16,000 evenly over the actual elapsed seconds between consecutive monthly due dates. The balance continues increasing across the 10th without a jump or reset. Its figure and the combined total include the current period’s accruing amount as well as overdue payments. Pause freezes the display; Resume live catches up to the current time. The UK balance now includes the disclosed late-entry adjustment and calculated post-judgment interest. No later repayments or recoveries are included. The total covers these three claims only, excluding the other investor claims mentioned elsewhere on the site.</p>
+ <p><a href="../sources/index.html">Source references</a></p>
+ </details>
+</section></div></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="brand" href="../index.html">
+        <span class="kicker">Public-record advisory</span>
+        <span class="name">András Tóthfalussy</span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="../index.html">Start</a>
+      <a href="../playbook/index.html">Playbook</a>
+        <a href="../updates/index.html">Updates</a>
+        <a href="../outstanding-balances/index.html" aria-current="page">Outstanding balances</a>
+        <a href="../known-associates/index.html">Known Associates</a>
+        <a href="../sources/index.html">Sources</a>
+        <a href="../about-the-author/index.html">About the author</a>
+        <a href="../links/index.html">Links</a>
+      </nav>
+    </div>
+    <p class="legal">
+      Copyright © 2025 &mdash; Published by Peter Pichler MBA. No affiliation with András Tóthfalussy. All rights reserved.<br>
+      This advisory is provided in good faith and for informational purposes only, sourced from court filings, arbitral records, customer reviews on independent platforms, corporate registries, and Mr. Tóthfalussy's own sworn declarations. Documented factual corrections are welcome.<br>
+      This site is an independent publication. It is not affiliated with, endorsed by, or acting on behalf of any government, court, or law-enforcement agency, and it makes no allegation of criminal liability; such determinations are for the appropriate authorities.
+    </p>
+  </div>
+</footer>
+
+<script src="../assets/app.js?v=4"></script>
+<script src="../assets/counters.js?v=live-4"></script>
+</body>
+</html>
