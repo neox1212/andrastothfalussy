@@ -22,7 +22,7 @@
     const fraction = (stamp-periodStart)/(periodEnd-periodStart);
     const hermelindisInterest = Math.round((months+fraction)*16000*100)/100;
     const hermelindis = 800000+hermelindisInterest;
-    return {hk, uk, interest, hermelindis, hermelindisInterest, months, combined:Math.round((hk+uk+hermelindis)*100)/100};
+    return {hk, uk, interest, hermelindis, hermelindisInterest, hermelindisDaily:16000*day/(periodEnd-periodStart), months, combined:Math.round((hk+uk+hermelindis)*100)/100};
   }
   if (typeof module !== 'undefined') module.exports = {calculate};
   if (typeof document === 'undefined') return;
@@ -50,7 +50,7 @@
     put('uk-balance',currency.format(v.uk));
     put('hermelindis-balance',currency.format(v.hermelindis));
     put('hermelindis-interest',currency.format(v.hermelindisInterest));
-    put('hermelindis-months',String(v.months));
+    put('hermelindis-daily',currency.format(v.hermelindisDaily));
     put('combined-balance',currency.format(v.combined));
     timestamp.textContent = new Date(now).toISOString().slice(0,19).replace('T',' ')+' UTC';
   }
